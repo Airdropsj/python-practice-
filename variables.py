@@ -49,7 +49,105 @@ print(type(name),type(age), type(city)) #it used to check the type of only one v
 #      has_trade = True
 
 # 5. type hinting (professional projects)
-#    ex. 
-account_balance: float = 500.0
-print(account_balance)
+#    ex. account_balance: float = 500.0
+# print(account_balance) when you get print dont use print(account_balance: float) bez it show error : this use for hint 
 
+# 6. collection variables : if list variables then use plural 
+# ex. users_name = ["a", "b", "c"]
+#     stock_symbols = ["reliance", "tata power", "tcs"]
+
+# 7. dictionary naming also in snake_case
+
+# variable naming formula 
+#       usally professional developer use 
+#             context + information formula
+
+# ex. studant_name = "shub"  context = studant , information = name
+#     studant_age = 25       context = studant , information = age
+
+#        information + context   
+# ex.  total_mark = 95     information = total ; context = mark 
+#  average_salary = 10555     information = average ; context = salary          
+# # 8. avoid shortcuts 
+
+# 9. constans : when program run thats values do not change.
+#      in which upper case use for constant variables
+# ex. USER_NAME = "SHUB"
+
+# pascal case - every word has frist latter capital
+#     in python pascalcase used for classes not for variables.
+# ex. 
+#    Frist_Name = "sj"  not use 
+#    Total_mark = 25    not User
+ 
+#  class Student Data :
+#                pass =   
+
+"""
+                                        practice 
+
+user information
+
+user_id = 92948527
+user_name = "@shubhamjadh"
+last_name = "jadh"
+frist_name = "shubh"
+email_address = "airdropsj@gamil.com"
+mobile_number = 7584236985
+date_of_birth = 20/05/2002
+is_active = True
+created_at = 20/5/2012
+last_login = 5/12/2025
+
+e - commerce
+
+product_id = 253462
+product_name = "shampoo"
+product_price = 250
+stock_quantity = 100
+discount_percentage = 10%
+
+banking 
+
+account_number = 120305564210
+account_balance = 10025
+transaction_amount = 5000
+ifc_code = "IDFC2000"
+branch_name = "idbi bank main branch"
+account_holder_name = "shub jadh"
+ammount_in_number = 5000
+ammout_in_word = "five thousand" 
+account_holder_aadhar_number = 1015565056222
+account_holder_pancard_number = "jcb1545p"    """
+
+
+# employee managenent 
+
+# employee_id = 252641
+# employee_name = "shubahm"
+# department_name = "technical"
+monthly_salary = 500000
+annual_bonus = 10000
+tax_percentage = 10
+# joining_date = 04/05/2024
+# years_of_experience = "5 to 6 years"
+# working_hours = 8
+
+tax_amount = monthly_salary * tax_percentage / 100
+net_salary = monthly_salary + annual_bonus - tax_amount 
+print(tax_amount)
+print(net_salary)
+
+
+# data analysis
+
+# data_frame =
+# column_name =
+# missing_value =
+# average_score = 
+# max_value =
+# min_value = 
+# total_records =
+# filtered_data =
+# train_dataset =
+# test_dataset =
