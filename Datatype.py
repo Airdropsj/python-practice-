@@ -159,14 +159,17 @@ print(type(price_of_stock))
 
 # J. range
 
-number = range(5)
+# number = range(5)
 
-for i in range (5):
-  print(i)
+# for i in range (5):
+#   print(i)
 
-K. None type
+# K. None type
 
-result = None
+# result = None
+
+number_in = 205
+print(isinstance(number_in,int))
 
 
 
