@@ -163,17 +163,53 @@
 
 
 
+
 # In python error means ?
    
 # # error means -- python detected something wrong and could not execute the code.
 # ex. print(10/0) ---> error 
 
 # a. value error -- the data type is correct but the value in that type is incorrect 
-ex. int("shub") ValueError
+# ex. int("shub") ValueError
 
-b. type error -- wrong data type used for operation 
-ex. "10" + 5 ---> str , int (in python str and int addition not possible)
+# b. type error -- wrong data type used for operation 
+# ex. "10" + 5 ---> str , int (in python str and int addition not possible)
 
-In professtional :
-             once the devleoper understands what error has occurred the problem can be quickly identified
+# In professtional :
+            #  once the devleoper understands what error has occurred the problem can be quickly identified
 
+# input() function means ? 
+#    this function allow the user to take input is always string even is a number is entered 
+
+# syntex : variable = input("prompt message")
+
+# name = input("Enter your name : ")
+# print(name)
+# print(bool(name))
+
+# age = input("Enter your age ")
+# print(bool(age))
+# print(age)
+
+# input() function always shows in string then how to get input in number (interger/float) ?
+#     by using typecasting 
+# ex. 
+# age = int(input("enter your age : "))
+# print(type(age))
+
+# 1. multiple input
+
+# name = input("name :") 
+# age = int(input("age : "))
+# city = input("city : ")
+
+# 3. taking multiple value in one line 
+# step 1
+# data = input("enter your name and age ")
+# step 2
+# .slipt it get string into two part 
+# print(data.split())
+
+a = map(int, input().split())
+print(a)
+ 
