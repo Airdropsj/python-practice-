@@ -56,10 +56,141 @@ side = 10
 area = side**2
 print(area)
 # (in 10 square root)/
-
 number = 2
 result = number**3
 print(result)
 # (2 cube)
 
 # 2. Assignment 
+# ex.
+variable1 = 15
+variable2= variable1
+# value of variable1 assign into variable2
+
+# Assignment operators
+
+# 1. Assign ---(=)
+value = "name"
+
+# 2. Add and assign ---(+=)
+number = 5
+number += 10
+print(number)
+
+# 2. subtract and assign --(-=)
+number = 52
+number -= 25
+print(number)
+
+# 3. multiply and assign --(*=)
+number = 8
+number *= 2
+print(number)
+
+# 4. Divide and assign --(/=)
+number = 7
+number /= 2
+print(number)
+
+# 5. floor divide and assign --(//=)
+number = 7
+number //= 2
+print(number)
+
+# 6.  remainder and assign --(%=)
+number = 9
+number %= 2
+print(number)
+
+# 7. power and assign ---(**)
+number = 2
+number **= 3
+print(number)
+
+# 3. comparison operators 
+
+# a. equal --(==)
+stored_password = "abc123"
+enterd_passward = "abc123"
+print(stored_password == enterd_passward)
+
+# b. Not equal --(!=)
+stored_password = "abc123"
+enterd_passward = "ab123"
+print(stored_password != enterd_passward)
+
+# c. greater than --(>) 
+# left side value is greater than right side 
+max_salary = 10000
+min_salary = 15000
+greater_value = max_salary > min_salary
+print(greater_value)
+
+# d. less than --(<)
+# left side value is less than right side 
+max_salary = 10000
+min_salary = 15000
+greater_value = max_salary < min_salary
+print(greater_value)
+
+# g. greater than equal to -- (>=)
+a = 10 >= 15
+print(a)
+
+# f. less than equal to -- (<=)
+a = 10 <= 15
+print(a)
+
+# string comparison 
+print("apple" == "origan")
+print("apple" == "apple")
+
+# chained comparison 
+age = 25
+print( 18 <= age <= 60)
+
+#4. logical opertaors 
+
+# A. and --(both condition are true)
+# ex . 1
+age = 25
+print(age >= 18 and age <= 60)
+# ex 2.
+age = 65
+print(age >= 18 and age <= 60)
+
+# B. or --(any one condition are true )
+marks = 85
+print(marks >= 90 or marks >= 80)
+
+# C. not --(true to false and false to True)
+print(not True)
+print(not False)
+
+# D. identity operators 
+# both variables point towards the same object .
+a = [1,2,3]
+b = a 
+print(a is b )
+
+a = [1,2,3]
+b = a 
+print(a is not b )
+
+# E. membership operators 
+# that check value in collection (collection = list, tuple, set, string, dictionary)
+fruits = ["apple" , "banana", "mango"]
+print("orange" in fruits)
+print("orange" not in fruits)
+
+# in string 
+name = "shubham"
+print("shu" in name)
+
+
+
+
+
+
+ 
+
