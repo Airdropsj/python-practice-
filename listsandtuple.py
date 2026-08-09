@@ -14,6 +14,7 @@ print(type(friends))
         #   - Index
         #   - duplicate value store
         #   - change value possible
+        #   - orded , mutable
 
 # list indexing 
 print(friends[2])
@@ -119,3 +120,107 @@ print(min(min_naumber))
 total_naumber = [10, 25 , 15]
 print(sum(total_naumber))
 
+
+                                        #    Tuple
+# - ordered 
+# - immutable 
+# - duplicate value allow
+# - any data type allow
+
+                         # tupe ---- round brackets()
+# tuple indexing 
+# same indexing as  list
+            #     0       1  2    3
+alnum_data = ("shubham", 25, 7, 12.03)
+            #    -4      -3 -2   -1 
+
+print(type(alnum_data))
+print(alnum_data[0])
+print(alnum_data[3])
+print(alnum_data[-2])
+
+# tuple slicing
+print(alnum_data[1:2])
+print(alnum_data[:3])
+print(alnum_data[0:4:2])
+
+tuple = ()
+print(type(tuple))
+
+single_tuple =(10,)
+print(type(single_tuple))
+print(single_tuple)
+
+# without parenthesess (packing)
+packing = 10, 25 ,33 
+print(packing)
+print(type(packing))
+
+# unpacking 
+data = (10, 25, 62)
+name, age, weight = data
+print(name)
+print(age)
+print(weight)
+
+# extended unpacking
+       # 0   1      2     3     
+data = (25, 65, "175cm", 34 )
+print(type(data))
+age ,*weight, hightchest = data
+print(age)
+print(weight)
+print(hightchest)
+
+numbers = (10,12,15,15,78,25,39)
+frist_series, *second_series, last_number = numbers
+print(frist_series)
+print(second_series)
+print(last_number)
+
+# tuple methods
+
+# 1. .count()
+print(numbers.count(15))
+
+# 2. .index() -  show the value of position
+print(numbers.index(78))
+
+# tuple operators 
+
+# 1. + concatenation -- combine two tuples
+my_t1 = (2, 3)
+my_t2 = (1, 2)
+my_t3 = my_t1 + my_t2
+print(my_t3)
+
+# 2. * repetition 
+that_t_repitation = (1, 2)
+print(that_t_repitation*4)
+
+# 3. in/not in 
+is_value_in = (10, 20, "shubham")
+print("shubham" in is_value_in)
+print(20 not in is_value_in)
+
+# 4. comparison operators
+print((101, 200, 545) == (101, 200, 545))
+print((11, 22) == (11, 55))
+
+# mutable objest inside tuple
+mutable_t = (10, [20,30],40)
+mutable_t[1].append(888)
+print(mutable_t)
+
+# tuple conversion -- list to tuple and tuple to list
+# list2 = ("none", 10, 52, 54)
+# list1 = list(list2)
+# print(list1)
+
+convertion_t = [10, 20, 32, 54, 64]
+t1 = tuple(convertion_t)
+print(t1)
+
+convert_1 = (101, 51, 666 , 85)
+h1 = list(convert_1)
+print(h1)
